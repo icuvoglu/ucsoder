@@ -1,0 +1,413 @@
+.container {
+    position: relative;
+    }
+    
+    
+    .wrapper{
+      display: flex;
+      margin-top: 90px;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 40px 0;
+    
+    }
+    .heroBottom {
+      background-color: var(--secondaryLight-color);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 50px 0;
+    }
+    .heroImage {
+      position: relative;
+      padding: 2px 16px;
+      height: 400px;
+      width: 100%;
+    }
+    .desktopImage {
+      display: none;
+    }
+    
+    .mobileImage {
+      position: relative;
+      height: 650px;
+      width: 100%;
+    }
+    
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 0 20px;
+    }
+    
+    .textContainer h3 {
+      color: #666666;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .textContainer h2 {
+      color: #666666;
+      text-align: center;
+      font-size: 24px;
+    }
+    
+    .textContainer P {
+      color: #666666;
+      text-align: center;
+      font-size: 14px;
+      width: 100%;
+    }
+    
+    .container .textContainer p {
+      text-align: center;
+    
+    }
+    
+    .circleEmpty {
+      position: relative;
+      padding: 0 30px;
+      width: 295px;
+      height: 295px;
+      background: transparent;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0 60px 0;
+    }
+    .circleContainer {
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      width: 243px;
+      height: 243px;
+    }
+    
+    .textBox {
+      position: absolute;
+      z-index: 100;
+      bottom: -70px;
+      left: 0;
+      width: 177px;
+      height: 112px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      border-radius: 20px;
+      background: #0c0c67;
+      align-items: center;
+    }
+    
+    .iconContainer {
+      overflow: hidden;
+      position: relative;
+      width: 130px;
+      height: 40px;
+    }
+    
+    .bottonTextContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px;
+      align-items: center;
+    }
+    
+    .bottonTextContainer h2 {
+      color: #666666;
+      text-align: center;
+      font-size: 24;
+      text-align: center;
+    }
+    
+    .bottonTextContainer p {
+      color: #666666;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      .circleEmpty {
+        width: 385px;
+        height: 385px;
+      }
+      .circleContainer {
+        width: 320px;
+        height: 320px;
+      }
+    
+      .desktopImage {
+        display: block;
+      }
+    
+      .mobileImage {
+        display: none;
+      }
+    
+      .textBox {
+        bottom: -50px;
+        left: -20px;
+        width: 210px;
+        height: 140px;
+      }
+    
+      .iconContainer {
+        overflow: hidden;
+        position: relative;
+        width: 160px;
+        height: 50px;
+      }
+      .textContainer h2 {
+        font-size: 26x;
+      }
+      .textContainer P {
+        font-size: 16px;
+      }
+      .bottonTextContainer p {
+        font-size: 16px;
+      }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .circleEmpty {
+        width: 385px;
+        height: 385px;
+      }
+      .circleContainer {
+        width: 320px;
+        height: 320px;
+      }
+    
+      .desktopImage {
+        display: block;
+      }
+    
+      .mobileImage {
+        display: none;
+      }
+    
+      .textBox {
+        bottom: -50px;
+        left: -20px;
+        width: 210px;
+        height: 140px;
+      }
+    
+      .iconContainer {
+        overflow: hidden;
+        position: relative;
+        width: 160px;
+        height: 50px;
+      }
+    
+      .textContainer h2 {
+        font-size: 26px;
+        /* order: 0; */
+      }
+      .textContainer h3 {
+        font-size: 18px;
+        /* order: 1;
+      }
+      .textContainer p {
+        font-size: 16px;
+        /* order: 2; */
+    
+      }
+    
+      .bottonTextContainer {
+        max-width: 90%;
+      }
+      .textContainer {
+        max-width: 90%;
+      }
+    
+      .bottonTextContainer h2 {
+        font-size: 26px;
+      }
+    
+      .bottonTextContainer p {
+        font-size: 16px;
+      }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1400px) {
+      .heroBottom {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5%;
+        width: 100%;
+    
+        
+      }
+    
+      .desktopImage {
+        display: block;
+      }
+    
+      .mobileImage {
+        display: none;
+      }
+    
+      .imageSection {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+      }
+      .textContainer {
+        max-width: 80%;
+      }
+      .textContainer h2 {
+        font-size: 30px;
+        order: 0;
+      }
+      .textContainer h3 {
+        font-size: 18px;
+        order: 1; /* Set order to 2 for h3 */
+      }
+      .textContainer p {
+        font-size: 18px;
+        /* order: 2; */
+      }
+    
+      .bottonTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 45%;
+      }
+    
+      .bottonTextContainer h2 {
+        font-size: 30px;
+        text-align: left;
+      }
+    
+      .bottonTextContainer p {
+        font-size: 18px;
+      }
+    
+      .heroBottom .bottonTextContainer p {
+        text-align: left;
+      }
+    
+      .circleEmpty {
+        width: 385px;
+        height: 385px;
+      }
+      .circleContainer {
+        width: 320px;
+        height: 320px;
+      }
+    
+      .textBox {
+        bottom: -30px;
+        left: 270px;
+        width: 230px;
+        height: 180px;
+      }
+      .iconContainer {
+        overflow: hidden;
+        position: relative;
+        width: 180px;
+        height: 60px;
+      }
+    }
+    
+    @media screen and (min-width: 1401px) {
+    
+      .wrapper{
+    /* max-width: 2000px; */
+    margin: auto;
+    margin-top: 90px;
+      
+      }
+    
+      .heroBottom {
+        flex-direction: row;
+        margin-top: 10px;
+        gap: 130px;
+        justify-content: space-around;
+        padding: 0 5%;
+      }
+    
+      .desktopImage {
+        display: block;
+      }
+    
+      .mobileImage {
+        display: none;
+      }
+    
+      .imageSection {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .textContainer {
+        max-width: 70%;
+      }
+    
+      .textContainer h2 {
+        font-size: 35px;
+        order: 0;
+      }
+      .textContainer h3 {
+        font-size: 20px;
+        order: 1; /* Set order to 2 for h3 */
+      }
+      .textContainer p {
+        font-size: 20px;
+        order: 2;
+      }
+    
+    
+     
+      .bottonTextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+      }
+    
+      .bottonTextContainer h2 {
+        text-align: left;
+        font-size: 35px;
+        font-style: normal;
+      }
+      .bottonTextContainer p {
+        text-align: left;
+        font-size: 20px;
+      }
+    
+      .circleEmpty {
+        width: 600px;
+        height: 600px;
+      }
+      .circleContainer {
+        width: 500px;
+        height: 500px;
+      }
+    
+      .textBox {
+        bottom: 40px;
+        left: 460px;
+        width: 255px;
+        height: 210px;
+      }
+    
+      .iconContainer {
+        overflow: hidden;
+        position: relative;
+        width: 200px;
+        height: 70px;
+      }
+    }
+    
